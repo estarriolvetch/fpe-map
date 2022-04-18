@@ -11,6 +11,6 @@ contract FeistelMock {
     }
 
     function feistelUnbalanced(uint256 input, uint256 key, uint256 round, uint256 size) public pure returns (uint256){
-        return input.feistel(key, round, size);
+        return input.feistelUnbalanced(key, round, size);
     }
 }

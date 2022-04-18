@@ -34,12 +34,12 @@ library Feistel {
             
             uint256 left = (input >> shortSize) & longMap;
             uint256 right = (input & shortMap);
-
+            
             for(uint256 i=0; i < round; i++) {
                 uint256 roundKey = uint256(keccak256(abi.encode(key, i)));
                 uint256 left_new = right;
                 uint256 right_new;
-                if(round % 2 == 0){
+                if(i % 2 == 0){
                     right_new = left ^ (longMap & uint256(keccak256(abi.encode(right, roundKey))));
                 } else {
                     right_new = left ^ (shortMap & uint256(keccak256(abi.encode(right, roundKey))));
@@ -48,6 +48,7 @@ library Feistel {
                 left = left_new;
                 right = right_new;
             }
+
             if (round % 2 == 0) {
                 return (left << shortSize) | right;
             } else {

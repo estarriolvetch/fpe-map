@@ -93,18 +93,18 @@ describe("FPEMapping", function () {
 
     // key = 0, domain = 20
     let appeared = new Set();
-    key = 0;
+    key = 0; 
     domain = 20;
     for(let i=0;i<domain;i++){
       const r = await FPEMapMock.fpeMappingFeistelAuto(i,key, domain);
       //console.log(r);
-      console.log(r); 
+      //console.log(r); 
       assert(r.lt(domain)); // within the domain
       assert(!appeared.has(r.toString())); // unique
       appeared.add(r.toString());   
       
     }
-    console.log("==="); 
+    //console.log("==="); 
 
     // key = 10000, domain = 100
     appeared = new Set();

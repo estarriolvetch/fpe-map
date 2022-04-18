@@ -39,21 +39,23 @@ describe("Greeter", function () {
     //console.log(feistel4Mock.functions);
 
     let appeared = new Set();
-    const size = 4 ; // 4 bit
-    // key = 0
+    const size = 5; // 5 bit
+    key = 0
     for(let i=0;i<2**size;i++){
-      const r = await feistelMock.feistelUnbalanced(i,0,3,size);
-      assert(r.lt(2**4)); // within the domain
+      const r = await feistelMock.feistelUnbalanced(i,key,3,size);
+      console.log(r);
+      assert(r.lt(2**size)); // within the domain
       assert(!appeared.has(r.toString())); // unique
       appeared.add(r.toString());  
       //console.log(r);
     }
 
     appeared = new Set();
-    // key = 10000
+    key = 10000
     for(let i=0;i<2**size;i++){
-      const r = await feistelMock.feistelUnbalanced(i,10000,4,size);
-      assert(r.lt(2**4)); // within the domain
+      const r = await feistelMock.feistelUnbalanced(i,key,4,size);
+      //console.log(r);
+      assert(r.lt(2**size)); // within the domain
       assert(!appeared.has(r.toString())); // unique
       appeared.add(r.toString());  
     }
