@@ -41,6 +41,8 @@ library FPEMap {
     function fpeMappingFeistelAuto(uint256 input, uint256 key, uint256 domain) internal pure returns (uint256 output) {
         require(input < domain, INPUT_OUTSIDE_DOMAIN_ERROR_MSG);
         uint256 size;
+
+        // Calculate the smallest required block size of the unbalanced Feistel network
         unchecked {
             size = BitScan.log2(domain) + 1;    
         }
