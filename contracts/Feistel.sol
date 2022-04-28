@@ -23,10 +23,10 @@ library Feistel {
         }
     }
 
-    /// Maximally unbalanced Feistel network
+    /// Unbalanced Feistel network
     function feistelUnbalanced(uint256 input, uint256 key, uint256 round, uint256 size) internal pure returns (uint256) {
         unchecked {
-            uint256 shortSize = 1;
+            uint256 shortSize = size / 2;
             uint256 longSize = size - shortSize;
             
             uint256 longMap = (1 << longSize) - 1;
