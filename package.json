@@ -10,5 +10,8 @@
   "name": "fpe-map",
   "version": "0.0.1",
   "main": "index.js",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "solidity-bits": "^0.1.0"
+  }
 }

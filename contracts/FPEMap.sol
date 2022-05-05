@@ -1,8 +1,8 @@
 //SPDX-License-Identifier: Unlicense
 pragma solidity ^0.8.0;
 
+import "solidity-bits/contracts/BitScan.sol";
 import "./Feistel.sol";
-import "./BitScan.sol";
 
 library FPEMap {
     using Feistel for uint256;
