@@ -1,4 +1,17 @@
-//SPDX-License-Identifier: Unlicense
+//SPDX-License-Identifier: MIT
+/**
+
+███████╗██████╗ ███████╗    ███╗   ███╗ █████╗ ██████╗ 
+██╔════╝██╔══██╗██╔════╝    ████╗ ████║██╔══██╗██╔══██╗
+█████╗  ██████╔╝█████╗█████╗██╔████╔██║███████║██████╔╝
+██╔══╝  ██╔═══╝ ██╔══╝╚════╝██║╚██╔╝██║██╔══██║██╔═══╝ 
+██║     ██║     ███████╗    ██║ ╚═╝ ██║██║  ██║██║     
+╚═╝     ╚═╝     ╚══════╝    ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     
+                                                       
+github: https://github.com/estarriolvetch/fpe-mapping
+
+ */
+
 pragma solidity ^0.8.0;
 
 import "solidity-bits/contracts/BitScan.sol";
