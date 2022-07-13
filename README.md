@@ -16,10 +16,10 @@ npm install --save-dev fpe-map
 yarn add --dev fpe-map
 ```
 
-## Usage:
+## Usage
 
 ```solidity
-uint256 metadataId = FPEMap.fpeMappingFeistelAuto(tokenId, randomSeed, maxSupply)
+uint256 metadataId = FPEMap.fpeMappingFeistelAuto(tokenId - startTokenId, randomSeed, maxSupply) + startTokenId
 ```
 
 ## Projects powered by fpe-map
