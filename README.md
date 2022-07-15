@@ -23,6 +23,10 @@ yarn add --dev fpe-map
 ## Usage
 The easiest way to use FPE Map is using `fpeMappingFeistelAuto` which automatically configure the block size of the encryption core and other parameters  within the algorithm.
 ```solidity
+uint256 metadataId = FPEMap.fpeMappingFeistelAuto(tokenId, randomSeed, maxSupply) 
+```
+If the token ID is not starting from `0`, one can do a simple modification to include that.
+```solidity
 uint256 metadataId = startTokenId +
   FPEMap.fpeMappingFeistelAuto(tokenId - startTokenId, randomSeed, maxSupply) 
 ```
