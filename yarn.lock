@@ -6503,10 +6503,10 @@ solc@^0.6.3:
     semver "^5.5.0"
     tmp "0.0.33"
 
-solidity-bits@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/solidity-bits/-/solidity-bits-0.1.0.tgz#04a69283977c7b7f809b52e883ced5774e0a3241"
-  integrity sha512-uXoTDTfAeR9xw2xPrGZGd9wraHRW2h6ncrqQGY1kxUDVt8ULQZApBMHnm3sVHzkIujFDzxoz+m6qTagE0PVYAw==
+solidity-bits@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/solidity-bits/-/solidity-bits-0.3.0.tgz#ed1f381b3742c7876e6b68500e4625cc288b58b8"
+  integrity sha512-s2nF1Hsm/FqHx6pVbuDyFaG+kjGQTxPATfIVkayDujOVW8wxXX7Z0/0kRm10UFvB3q3bedpF49qbHHx52TPIjw==
 
 source-map-resolve@^0.5.0:
   version "0.5.3"
