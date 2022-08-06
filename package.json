@@ -8,10 +8,10 @@
     "hardhat": "^2.9.2"
   },
   "name": "fpe-map",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "solidity-bits": "^0.3.0"
+    "solidity-bits": "^0.3.2"
   }
 }
