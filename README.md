@@ -35,3 +35,4 @@ uint256 metadataId = startTokenId +
 
 ## Projects powered by fpe-map
 - [ZombiePod Genesis](https://twitter.com/get_turned)
+- [Godpod](https://opensea.io/collection/godpod-poddy)
