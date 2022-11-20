@@ -15,11 +15,11 @@ Powered by the encryption algorithm, any small change in the supplied random num
 ## Installaion
 ### npm
 ```
-npm install --save-dev fpe-map
+npm install fpe-map
 ```
 ### yarn
 ```
-yarn add --dev fpe-map
+yarn add fpe-map
 ```
 
 ## Usage
